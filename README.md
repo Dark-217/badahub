@@ -5,7 +5,7 @@
 This project is an experiment in building a home automation platform using an amalgamation of technologies. After studying the topic of "infrastructure as code," I wondered what it would be like to build a "household as code;" a series of moving peices and projects that could be easily deployed, managed, and customized. Together, these peices would form a single purpose: household/home server automation and monitoring.
 
 ### Table of Contents
-1. [BadaHub - Overview](https://github.com/joe307bad/badahub/tree/master/BadaHub)
+1. [BadaHub - Overview](https://github.com/joe307bad/badahub)
    
    Basic architecture and purpose of project.
 
