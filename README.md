@@ -21,6 +21,10 @@ This project is an experiment in building a home automation platform using an am
 
    On device AI with Snips. This purpose of this project is to build a completely open source voice-driven assistant. 
 
+4. [BadaHub - Deployment](Deployment)
+
+   Ansible deployment scripts to build API into Docker container and deploy it to JBHS and build Client code and Snips code for deployment.
+
 ### Resources
 * [Google Doc with links and notes](https://goo.gl/upCyLR)
 * [Google Sheet with list of intended integrations](https://goo.gl/FEHGTD)
