@@ -2,7 +2,7 @@
 .NET Core/Angular/WebSocket home automation platform for the Bada household
 
 ### Household as Code
-This project is an experiment in building a home automation platform using an amalgamation of technologies. After studying the topic of "infrastructure as code," I wondered what it would be like to build a "household as code;" a series of moving peices and projects that could be easily deployed, managed, and customized. Together, these peices would form a single purpose: household/home server automation and monitoring.
+This project is an experiment in building a home automation platform using an amalgamation of technologies. After studying the topic of "infrastructure as code," I wondered what it would be like to build a "household as code;" a series of moving pieces and projects that could be easily deployed, managed, and customized. Together, these peices would form a single purpose: household/home server automation and monitoring.
 
 ### Table of Contents
 1. [BadaHub Overview](badahub)
@@ -15,7 +15,7 @@ This project is an experiment in building a home automation platform using an am
 
 3. [BadaHub.Client](BadaHub.Client)
 
-   BenjaOS/Electron/Ionic/Angular bootable kiosk application and mobile application. The goal of the Client project is to develop a set of code that can be deployed to everything (with the priority being a boot-to-app tablet and mobile phones).
+   BenjaOS/Electron/Ionic/Angular bootable kiosk application and mobile application. The goal of the Client project is to develop one set of code that can be deployed to everything (with the priority being a boot-to-app tablet and mobile phones).
 
 4. [BadaHub.Snips](BadaHub.Snips)
 
@@ -23,7 +23,7 @@ This project is an experiment in building a home automation platform using an am
 
 4. [Deployment](Deployment)
 
-   Ansible deployment scripts to build API into Docker container and deploy it to JBHS and build Client code and Snips code for deployment.
+   Ansible roles to build the API into Docker container and deploy it to JBHS. Also, there will be roles to build Client code and Snips code for deployment.
 
 ### Resources
 * [Google Doc with links and notes](https://goo.gl/upCyLR)
