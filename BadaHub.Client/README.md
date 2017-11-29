@@ -1,5 +1,5 @@
 # BadaHub.Client
-BenjaOS/Electron/Ionic/Angular bootable kiosk application and mobile application. The goal of this project to be able to deploy this to virtually any device and consume the same information from the API.
+BenjaOS/Electron/Ionic/Angular bootable kiosk application and mobile application. The goal of this project to be able to deploy one set of code to virtually any device and consume the same information from the API.
 
 ### ToDo
 - [ ] Build project with Polyonic
