@@ -11,7 +11,7 @@ This project is an experiment in building a home automation platform using an am
 
 2. [BadaHub.API](BadaHub.API)
 
-   .NET Core/EF Core WebSocket API running in a Docker container on JoeBadsHomeServer (JBHS). Serves as a decoupling of Home Assistant and the clients dispersed in and outside of the house. Enables the ability to interface with Home Assistant and any other 3rd party API.
+   Nest/TypeORM WebSocket API running in a Docker container on JoeBadsHomeServer (JBHS). Serves as a decoupling of Home Assistant and the clients dispersed in and outside of the house. Enables the ability to interface with Home Assistant and any other 3rd party API.
 
 3. [BadaHub.Client](BadaHub.Client)
 
