@@ -1,5 +1,5 @@
 # BadaHub 🏠
-.NET Core/Angular/WebSocket home automation platform for the Bada home
+Nest/TypeORM/Angular/WebSocket home automation platform for the Bada home
 
 ### Home as Code
 This project is an experiment in building a home automation platform using an amalgamation of technologies. After studying the topic of "infrastructure as code," I wondered what it would be like to build a "home as code;" a series of moving pieces and projects that could be easily deployed, managed, and customized. Together, these peices would form a single purpose: household/home server automation and monitoring.
