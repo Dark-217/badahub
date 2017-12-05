@@ -1,5 +1,5 @@
 # BadaHub 🏠
-.NET Core/Angular/WebSocket home automation platform for the Bada home
+Nest/TypeORM/Angular/WebSocket home automation platform for the Bada home
 
 ### Home as Code
 This project is an experiment in building a home automation platform using an amalgamation of technologies. After studying the topic of "infrastructure as code," I wondered what it would be like to build a "home as code;" a series of moving pieces and projects that could be easily deployed, managed, and customized. Together, these peices would form a single purpose: household/home server automation and monitoring.
@@ -11,7 +11,7 @@ This project is an experiment in building a home automation platform using an am
 
 2. [BadaHub.API](BadaHub.API)
 
-   .NET Core/EF Core WebSocket API running in a Docker container on JoeBadsHomeServer (JBHS). Serves as a decoupling of Home Assistant and the clients dispersed in and outside of the house. Enables the ability to interface with Home Assistant and any other 3rd party API.
+   Nest/TypeORM WebSocket API running in a Docker container on JoeBadsHomeServer (JBHS). Serves as a decoupling of Home Assistant and the clients dispersed in and outside of the house. Enables the ability to interface with Home Assistant and any other 3rd party API.
 
 3. [BadaHub.Client](BadaHub.Client)
 
