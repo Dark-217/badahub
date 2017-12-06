@@ -1,5 +1,5 @@
 import { NestFactory } from '@nestjs/core';
-import { ApplicationModule } from './modules/app.module';
+import { ApplicationModule } from './app.module';
 import {WsAdapter} from "./modules/common/adapters/ws-adapter";
 
 async function bootstrap() {
