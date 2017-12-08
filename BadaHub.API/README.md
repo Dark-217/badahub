@@ -4,7 +4,8 @@
 ### ToDo
 - [x] Create a WebSocket server
 - [ ] Make a request to the server, return state change to seperate device (phone)
-- [ ] Set up ngrx event bus to save events to MySQL then broadcast via WS
+- [ ] Set up event bus to trigger event (to HASS or 3rd party), save events to MySQL then broadcast via WS
+- [ ] Log errors to file (set up file watcher later to parse and display recent errors)
 - [ ] Set up Mock Home Assistant (MHA) project (seperate folder/project?)
 - [ ] Trigger MHA state change, break inside API, transform to global IBadaHubEvent, return to computer and phone
 - [ ] Microservice for talking to IRKit

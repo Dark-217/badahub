@@ -4,8 +4,8 @@ import {DataModule} from './data/data.module';
 
 @Module({
     modules: [
-        EventsModule,
-        DataModule
+        EventsModule
+        // DataModule
     ],
 })
 export class ApplicationModule {}

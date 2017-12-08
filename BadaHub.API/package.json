@@ -13,7 +13,7 @@
     "@nestjs/core": "^4.3.0",
     "@nestjs/microservices": "^4.3.0",
     "@nestjs/testing": "^4.3.0",
-    "@nestjs/websockets": "^4.3.0",
+    "@nestjs/websockets": "^4.4.1",
     "class-transformer": "^0.1.7",
     "class-validator": "^0.7.2",
     "mysql": "^2.15.0",
