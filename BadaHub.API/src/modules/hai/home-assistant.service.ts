@@ -2,19 +2,29 @@ import 'rxjs/add/observable/from';
 import 'rxjs/add/operator/map';
 import {Component, Inject} from '@nestjs/common';
 import {Event} from '../events/models/event';
-import * as WebSocket from 'ws';
+let W3CWebSocket = require('websocket').w3cwebsocket;
 
 @Component()
 export class HomeAssistantService {
 
     private homeAssistantWebSocket: WebSocket;
+    private isConnected: boolean = false;
 
     constructor() {
-        this.homeAssistantWebSocket = new WebSocket('ws://192.168.0.8:8123/api/websocket');
+        if(!this.isConnected) {
+            this.isConnected = true;
+            var client = new W3CWebSocket('ws://192.168.0.8:8123/api/websocket');
 
-        this.homeAssistantWebSocket.on('open', function open(data) {
-            console.log("hey");
-        });
+            client.onopen = function(data) {
+                console.log('WebSocket Client Connected');
+
+            };
+        }
+        // this.homeAssistantWebSocket = new WebSocket('ws://192.168.0.8:8123/api/websocket');
+        //
+        // this.homeAssistantWebSocket.on('connection', function open(data) {
+        //     console.log("hey");
+        // });
     }
 
     // public broadcastToAllClients = () => this.eventGateway.broadCastToClients();
