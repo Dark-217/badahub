@@ -5,13 +5,11 @@ import {HomeAssistantModule} from './modules/hai/home-assistant.module';
 
 @Module({
     modules: [
-        EventsModule,
-        HomeAssistantModule
+        EventsModule
         // DataModule
     ],
     exports: [
-        EventsModule,
-        HomeAssistantModule
+        EventsModule
     ]
 })
 export class ApplicationModule {}

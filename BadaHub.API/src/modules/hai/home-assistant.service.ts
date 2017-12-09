@@ -1,36 +1,45 @@
 import 'rxjs/add/observable/from';
 import 'rxjs/add/operator/map';
-import {Component, Inject} from '@nestjs/common';
+import {Component} from '@nestjs/common';
 import {Event} from '../events/models/event';
-let W3CWebSocket = require('websocket').w3cwebsocket;
+import {BehaviorSubject} from 'rxjs/BehaviorSubject';
+let WebSocketClient = require('websocket').client;
 
 @Component()
 export class HomeAssistantService {
 
-    private homeAssistantWebSocket: WebSocket;
-    private isConnected: boolean = false;
+    private homeAssistantWebSocket: any;
+    private _hass: any;
+    private requestCount: number = 202;
+    private eventStream: BehaviorSubject<string> = new BehaviorSubject("");
 
     constructor() {
-        if(!this.isConnected) {
-            this.isConnected = true;
-            var client = new W3CWebSocket('ws://192.168.0.8:8123/api/websocket');
+        this.homeAssistantWebSocket = new WebSocketClient();
+        this.homeAssistantWebSocket.connect('ws://192.168.0.8:8123/api/websocket');
 
-            client.onopen = function(data) {
-                console.log('WebSocket Client Connected');
 
-            };
-        }
-        // this.homeAssistantWebSocket = new WebSocket('ws://192.168.0.8:8123/api/websocket');
-        //
-        // this.homeAssistantWebSocket.on('connection', function open(data) {
-        //     console.log("hey");
-        // });
+        this.homeAssistantWebSocket.on('connect', (connection) => {
+             this._hass = connection;
+             this.eventStream.subscribe(data => {
+                 return connection.sendUTF(data)
+             });
+        });
+
+
+
     }
 
-    // public broadcastToAllClients = () => this.eventGateway.broadCastToClients();
+    //public broadcastToAllClients = () => this.eventGateway.broadCastToClients();
 
     public triggerHomeAssistantEvent = (event: Event) => {
         //todo send web socket event to home assistant
+        this.eventStream.next(JSON.stringify({
+            'id': 600,
+            'type': 'call_service',
+            'domain': 'light',
+            'service': 'turn_on',
+            'service_data': {'entity_id': 'light.bed_light'}
+        }));
         console.log(event)
     }
 

@@ -4,6 +4,7 @@ import {HomeAssistantModule} from '../hai/home-assistant.module';
 import {HomeAssistantService} from '../hai/home-assistant.service';
 
 @Module({
-    components: [EventsGateway],
+    modules: [HomeAssistantModule],
+    components: [EventsGateway]
 })
 export class EventsModule {}
