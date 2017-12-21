@@ -2,10 +2,10 @@ import 'rxjs/add/observable/from';
 import 'rxjs/add/operator/map';
 import {Component} from '@nestjs/common';
 import {Event} from '../events/models/event';
-import {Subject} from "rxjs/Subject";
-import {ReplaySubject} from "rxjs/ReplaySubject";
+import {Subject} from 'rxjs/Subject';
+import {ReplaySubject} from 'rxjs/ReplaySubject';
 
-let WebSocketClient = require('websocket').client;
+let WebSocket = require('websocket').client;
 
 @Component()
 export class HomeAssistantService {
@@ -14,7 +14,7 @@ export class HomeAssistantService {
     private eventStream: Subject<any> = new ReplaySubject();
 
     constructor() {
-        this.homeAssistantWebSocket = new WebSocketClient();
+        this.homeAssistantWebSocket = new WebSocket();
 
         this.homeAssistantWebSocket.on('connect', (connection) => {
 
@@ -25,9 +25,13 @@ export class HomeAssistantService {
             connection.on('message', (message) => {
                 console.log(message);
             });
+
+            connection.on('close', function (e) {
+                console.log('echo-protocol Connection Closed');
+            });
         });
 
-        this.homeAssistantWebSocket.connect('ws://localhost:8123/api/websocket')
+        this.homeAssistantWebSocket.connect('ws://192.168.0.8:8123/api/websocket');
 
     }
 
@@ -36,11 +40,11 @@ export class HomeAssistantService {
     public triggerHomeAssistantEvent = (event: Event) => {
         //todo send web socket event to home assistant
         this.eventStream.next(JSON.stringify({
-            "id": event.id,
-            "type": "call_service",
-            "domain": "light",
-            "service": "turn_on",
-            "service_data": {"entity_id": "light.bed_light"}
+            'id': event.id,
+            'type': 'call_service',
+            'domain': 'light',
+            'service': 'turn_on',
+            'service_data': {'entity_id': 'light.bed_light'}
         }));
     }
 

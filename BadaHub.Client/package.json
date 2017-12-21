@@ -65,6 +65,5 @@
       "app": "build"
     }
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
