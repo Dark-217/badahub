@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  badahub.api:
+    image: badahub.api
+    build:
+      context: ./BadaHub.API
+      dockerfile: Dockerfile
