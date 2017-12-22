@@ -29,4 +29,4 @@ gulp.task('dev', function () {
   .catch(function (err) {
     console.log('Error starting watch: ', err)
   })
-})
+});

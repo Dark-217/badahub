@@ -11,6 +11,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {FlexLayoutModule} from "@angular/flex-layout";
+import {ChartModule} from "angular-highcharts";
+import {MatTableModule} from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -21,8 +23,10 @@ import {FlexLayoutModule} from "@angular/flex-layout";
     TabsPage
   ],
   imports: [
+    ChartModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    MatTableModule,
     FlexLayoutModule
   ],
   bootstrap: [IonicApp],
