@@ -1,0 +1,65 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "d9736808f0788221736116e25b3238cd20acc299"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "BadaHub.API.Domain/1.0.0": {
+        "dependencies": {
+          "BadaHub.API.Domain.Core": "1.0.0",
+          "FluentValidation": "7.3.3"
+        },
+        "runtime": {
+          "BadaHub.API.Domain.dll": {}
+        }
+      },
+      "FluentValidation/7.3.3": {
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
+      "MediatR/4.0.1": {
+        "runtime": {
+          "lib/netstandard1.1/MediatR.dll": {}
+        }
+      },
+      "BadaHub.API.Domain.Core/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "7.3.3",
+          "MediatR": "4.0.1"
+        },
+        "runtime": {
+          "BadaHub.API.Domain.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BadaHub.API.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentValidation/7.3.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-evpalruQAVErNrogGrSn7Rg96Cak/R0Bj1rU6LFjw4hfgOqskU86S7U4rDnZlkgqKQiO5uElbvHVKLw7wGMiew==",
+      "path": "fluentvalidation/7.3.3",
+      "hashPath": "fluentvalidation.7.3.3.nupkg.sha512"
+    },
+    "MediatR/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nIgiOuD10aSrariE29T3/NdWKfwqOfyJhuuqdSD6RJa8vvYUxLAsWZ64UwYm7pF7yPIjM36M+3W0hpyPTAj4Gg==",
+      "path": "mediatr/4.0.1",
+      "hashPath": "mediatr.4.0.1.nupkg.sha512"
+    },
+    "BadaHub.API.Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

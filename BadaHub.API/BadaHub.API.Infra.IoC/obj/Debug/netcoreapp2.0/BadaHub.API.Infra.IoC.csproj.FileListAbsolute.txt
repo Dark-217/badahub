@@ -1,0 +1,8 @@
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Infra.IoC\bin\Debug\netcoreapp2.0\BadaHub.API.Infra.IoC.deps.json
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Infra.IoC\bin\Debug\netcoreapp2.0\BadaHub.API.Infra.IoC.dll
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Infra.IoC\bin\Debug\netcoreapp2.0\BadaHub.API.Infra.IoC.pdb
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Infra.IoC\obj\Debug\netcoreapp2.0\BadaHub.API.Infra.IoC.csproj.CoreCompileInputs.cache
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Infra.IoC\obj\Debug\netcoreapp2.0\BadaHub.API.Infra.IoC.AssemblyInfoInputs.cache
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Infra.IoC\obj\Debug\netcoreapp2.0\BadaHub.API.Infra.IoC.AssemblyInfo.cs
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Infra.IoC\obj\Debug\netcoreapp2.0\BadaHub.API.Infra.IoC.dll
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Infra.IoC\obj\Debug\netcoreapp2.0\BadaHub.API.Infra.IoC.pdb

@@ -1,0 +1,8 @@
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Domain.Core\bin\Debug\netcoreapp2.0\BadaHub.API.Domain.Core.deps.json
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Domain.Core\bin\Debug\netcoreapp2.0\BadaHub.API.Domain.Core.dll
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Domain.Core\bin\Debug\netcoreapp2.0\BadaHub.API.Domain.Core.pdb
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Domain.Core\obj\Debug\netcoreapp2.0\BadaHub.API.Domain.Core.csproj.CoreCompileInputs.cache
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Domain.Core\obj\Debug\netcoreapp2.0\BadaHub.API.Domain.Core.AssemblyInfoInputs.cache
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Domain.Core\obj\Debug\netcoreapp2.0\BadaHub.API.Domain.Core.AssemblyInfo.cs
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Domain.Core\obj\Debug\netcoreapp2.0\BadaHub.API.Domain.Core.dll
+C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API.Domain.Core\obj\Debug\netcoreapp2.0\BadaHub.API.Domain.Core.pdb

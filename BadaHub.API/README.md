@@ -1,6 +1,8 @@
 # BadaHub.API
 .NET Core/EF Core/SignalR WebSocket API that serves as the middleware between the clients and 3rd party APIs. Also records history in SQL Server.
 
+https://github.com/EduardoPires/EquinoxProject
+
 ### ToDo
 - [x] Create a WebSocket server
 - [ ] Make a request to the server, return state change to seperate device (phone)

@@ -12977,6 +12977,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Users\\Joseph\\Source\\BadaHub\\BadaHub.API\\BadaHub.API\\BadaHub.API.csproj",
       "projectName": "BadaHub.API",

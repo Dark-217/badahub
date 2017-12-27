@@ -3,7 +3,6 @@ C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API\bin\Debug\netcoreapp2.0\B
 C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API\bin\Debug\netcoreapp2.0\BadaHub.API.runtimeconfig.dev.json
 C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API\bin\Debug\netcoreapp2.0\BadaHub.API.dll
 C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API\bin\Debug\netcoreapp2.0\BadaHub.API.pdb
-C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API\obj\Debug\netcoreapp2.0\BadaHub.API.csprojResolveAssemblyReference.cache
 C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API\obj\Debug\netcoreapp2.0\BadaHub.API.csproj.CoreCompileInputs.cache
 C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API\obj\Debug\netcoreapp2.0\BadaHub.API.AssemblyInfoInputs.cache
 C:\Users\Joseph\Source\BadaHub\BadaHub.API\BadaHub.API\obj\Debug\netcoreapp2.0\BadaHub.API.AssemblyInfo.cs
