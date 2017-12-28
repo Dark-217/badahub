@@ -1,5 +1,4 @@
-﻿using System;
-using FluentValidation;
+﻿using FluentValidation;
 using BadaHub.API.Domain.Commands;
 
 namespace BadaHub.API.Domain.Validations

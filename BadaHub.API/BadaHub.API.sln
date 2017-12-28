@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadaHub.API", "BadaHub.API\BadaHub.API.csproj", "{D40FEBF3-7DBA-4439-9AF5-B513942D904E}"
 EndProject
@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadaHub.API.Infra.IoC", "Ba
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadaHub.API.Domain.Core", "BadaHub.API.Domain.Core\BadaHub.API.Domain.Core.csproj", "{193E156E-13A9-45B0-BFF2-4C33DBD480DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadaHub.API.Domain", "BadaHub.API.Domain\BadaHub.API.Domain.csproj", "{5554011F-BBF4-4BCE-9AE8-4548774BF036}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadaHub.API.Domain", "BadaHub.API.Domain\BadaHub.API.Domain.csproj", "{5554011F-BBF4-4BCE-9AE8-4548774BF036}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadaHub.API.Application", "BadaHub.API.Application\BadaHub.API.Application.csproj", "{FA5D9703-CD8E-4001-B189-42B3351A1F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadaHub.API.Data", "BadaHub.API.Data\BadaHub.API.Data.csproj", "{0FCBF071-968E-49D3-A5BD-67A897821E34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{5554011F-BBF4-4BCE-9AE8-4548774BF036}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5554011F-BBF4-4BCE-9AE8-4548774BF036}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5554011F-BBF4-4BCE-9AE8-4548774BF036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5D9703-CD8E-4001-B189-42B3351A1F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5D9703-CD8E-4001-B189-42B3351A1F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5D9703-CD8E-4001-B189-42B3351A1F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5D9703-CD8E-4001-B189-42B3351A1F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FCBF071-968E-49D3-A5BD-67A897821E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FCBF071-968E-49D3-A5BD-67A897821E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FCBF071-968E-49D3-A5BD-67A897821E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FCBF071-968E-49D3-A5BD-67A897821E34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

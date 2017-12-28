@@ -1,6 +1,5 @@
 ﻿using System;
 using BadaHub.API.Domain.Core.Commands;
-using System.Collections.Generic;
 
 namespace BadaHub.API.Domain.Commands
 {

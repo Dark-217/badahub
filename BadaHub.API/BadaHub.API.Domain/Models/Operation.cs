@@ -1,8 +1,6 @@
 ﻿using BadaHub.API.Domain.Commands;
 using BadaHub.API.Domain.Core.Models;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BadaHub.API.Domain.Models
 {

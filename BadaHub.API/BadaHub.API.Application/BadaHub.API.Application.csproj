@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BadaHub.API.Data\BadaHub.API.Data.csproj" />
+    <ProjectReference Include="..\BadaHub.API.Domain\BadaHub.API.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

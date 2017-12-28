@@ -1,6 +1,5 @@
 ﻿using BadaHub.API.Domain.Commands;
 using System;
-using System.Collections.Generic;
 using BadaHub.API.Domain.Core.Bus;
 using BadaHub.API.Domain.Core.Notifications;
 using BadaHub.API.Domain.Interfaces;

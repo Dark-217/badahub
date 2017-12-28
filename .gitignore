@@ -1,1 +1,16 @@
 configuration.json
+BadaHub.API/node_modules/
+*.iml
+BadaHub.API/.idea/
+BadaHub.API/.vscode/
+*.log
+BadaHub.API/BadaHub.API.Domain/obj/
+BadaHub.API/BadaHub.API.Domain/bin/
+BadaHub.API/BadaHub.API.Infra.IoC/obj/
+BadaHub.API/BadaHub.API.Infra.IoC/bin/
+BadaHub.API/BadaHub.API/obj/
+BadaHub.API/BadaHub.API/bin/
+BadaHub.API/BadaHub.API.Domain.Core/obj/
+BadaHub.API/BadaHub.API.Domain.Core/bin/
+BadaHub.API/.vs/
+BadaHub.API/BadaHub.API.Domain/bin/
