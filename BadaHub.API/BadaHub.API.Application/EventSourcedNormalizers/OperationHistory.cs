@@ -46,7 +46,7 @@ namespace BadaHub.API.Application.EventSourcedNormalizers
 
                 switch (e.MessageType)
                 {
-                    case "NewOperationEvent":
+                    case "OperationDispatchedEvent":
                         values = JsonConvert.DeserializeObject<dynamic>(e.Data);
                         slot.Action = "NewOperation";
                         slot.When = values["Timestamp"];

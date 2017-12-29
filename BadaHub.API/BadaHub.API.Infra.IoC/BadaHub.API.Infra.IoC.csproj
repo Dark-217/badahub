@@ -9,4 +9,8 @@
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BadaHub.API.Application\BadaHub.API.Application.csproj" />
+    <ProjectReference Include="..\BadaHub.API.Domain.Core\BadaHub.API.Domain.Core.csproj" />
+  </ItemGroup>
 </Project>

@@ -4,8 +4,8 @@ BenjaOS/Electron/Ionic/Angular bootable kiosk application and mobile application
 ### ToDo
 - [x] Build project with Polyonic
 - [x] Add @angular/flex-layout
-- [ ] Add D3 package and add two line charts
-- [ ] Mock CPU/RAM usage and add live D3 charts
+- [x] Add Highcharts package and add two line charts
+- [ ] Mock CPU/RAM usage and add live Highcharts
 - [ ] Set up simple ngrx flow
 - [ ] Build WebSocket module to interface with the API
 - [ ] Connect to API and output number of connected clients to two seperate devices

@@ -1,22 +1,20 @@
-﻿//using Equinox.Application.Interfaces;
-//using Equinox.Application.Services;
-//using Equinox.Domain.CommandHandlers;
-//using Equinox.Domain.Commands;
-//using Equinox.Domain.Core.Bus;
-//using Equinox.Domain.Core.Events;
-//using Equinox.Domain.Core.Notifications;
-//using Equinox.Domain.EventHandlers;
-//using Equinox.Domain.Events;
-//using Equinox.Domain.Interfaces;
-//using Equinox.Infra.CrossCutting.Bus;
-//using Equinox.Infra.CrossCutting.Identity.Authorization;
-//using Equinox.Infra.CrossCutting.Identity.Models;
-//using Equinox.Infra.CrossCutting.Identity.Services;
-//using Equinox.Infra.Data.Context;
-//using Equinox.Infra.Data.EventSourcing;
-//using Equinox.Infra.Data.Repository;
-//using Equinox.Infra.Data.Repository.EventSourcing;
-//using Equinox.Infra.Data.UoW;
+﻿using AutoMapper;
+using BadaHub.API.Application.Interfaces;
+using BadaHub.API.Application.Services;
+using BadaHub.API.Data.Context;
+using BadaHub.API.Data.EventSourcing;
+using BadaHub.API.Data.Repository;
+using BadaHub.API.Data.Repository.EventSourcing;
+using BadaHub.API.Data.UoW;
+using BadaHub.API.Domain.CommandHandlers;
+using BadaHub.API.Domain.Commands;
+using BadaHub.API.Domain.Core.Bus;
+using BadaHub.API.Domain.Core.Events;
+using BadaHub.API.Domain.Core.Notifications;
+using BadaHub.API.Domain.EventHandlers;
+using BadaHub.API.Domain.Events;
+using BadaHub.API.Domain.Interfaces;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -29,44 +27,40 @@ namespace BadaHub.API.Infra.IoC
             // ASP.NET HttpContext dependency
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-            //// Domain Bus (Mediator)
-            //services.AddScoped<IMediatorHandler, InMemoryBus>();
+            //Domain Bus(Mediator)
+            services.AddScoped<IMediatorHandler, InMemoryBus>();
 
             //// ASP.NET Authorization Polices
-            //services.AddSingleton<IAuthorizationHandler, ClaimsRequirementHandler>(); ;
+            services.AddSingleton<IAuthorizationHandler, ClaimsRequirementHandler>(); ;
 
             //// Application
-            //services.AddSingleton(Mapper.Configuration);
-            //services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<IConfigurationProvider>(), sp.GetService));
-            //services.AddScoped<ICustomerAppService, CustomerAppService>();
+            services.AddSingleton(Mapper.Configuration);
+            services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<IConfigurationProvider>(), sp.GetService));
+            services.AddScoped<IOperationAppService, OperationAppService>();
 
             //// Domain - Events
-            //services.AddScoped<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
-            //services.AddScoped<INotificationHandler<CustomerRegisteredEvent>, CustomerEventHandler>();
-            //services.AddScoped<INotificationHandler<CustomerUpdatedEvent>, CustomerEventHandler>();
-            //services.AddScoped<INotificationHandler<CustomerRemovedEvent>, CustomerEventHandler>();
+            services.AddScoped<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
+            services.AddScoped<INotificationHandler<OperationDispatchedEvent>, OperationEventHandler>();
 
             //// Domain - Commands
-            //services.AddScoped<INotificationHandler<RegisterNewCustomerCommand>, CustomerCommandHandler>();
-            //services.AddScoped<INotificationHandler<UpdateCustomerCommand>, CustomerCommandHandler>();
-            //services.AddScoped<INotificationHandler<RemoveCustomerCommand>, CustomerCommandHandler>();
+            services.AddScoped<INotificationHandler<OperationDispatchedCommand>, OperationCommandHandler>();
 
             //// Infra - Data
-            //services.AddScoped<ICustomerRepository, CustomerRepository>();
-            //services.AddScoped<IUnitOfWork, UnitOfWork>();
-            //services.AddScoped<EquinoxContext>();
+            services.AddScoped<IOperationRepository, OperationRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<Context>();
 
             //// Infra - Data EventSourcing
-            //services.AddScoped<IEventStoreRepository, EventStoreSQLRepository>();
-            //services.AddScoped<IEventStore, SqlEventStore>();
-            //services.AddScoped<EventStoreSQLContext>();
+            services.AddScoped<IEventStoreRepository, EventStoreSqlRepository>();
+            services.AddScoped<IEventStore, SqlEventStore>();
+            services.AddScoped<EventStoreSqlContext>();
 
             //// Infra - Identity Services
-            //services.AddTransient<IEmailSender, AuthEmailMessageSender>();
-            //services.AddTransient<ISmsSender, AuthSMSMessageSender>();
+            services.AddTransient<IEmailSender, AuthEmailMessageSender>();
+            services.AddTransient<ISmsSender, AuthSMSMessageSender>();
 
             //// Infra - Identity
-            //services.AddScoped<IUser, AspNetUser>();
+            services.AddScoped<IUser, AspNetUser>();
         }
     }
 }

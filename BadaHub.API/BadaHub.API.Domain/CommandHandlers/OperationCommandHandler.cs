@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 
 namespace BadaHub.API.Domain.CommandHandlers
 {
-    class OperationCommandHandler : CommandHandler,
-        INotificationHandler<NewOperationCommand>
+    public class OperationCommandHandler : CommandHandler,
+        INotificationHandler<OperationDispatchedCommand>
     {
         public OperationCommandHandler(IUnitOfWork uow, IMediatorHandler bus, INotificationHandler<DomainNotification> notifications) : base(uow, bus, notifications)
         {
         }
 
-        public Task Handle(NewOperationCommand notification, CancellationToken cancellationToken)
+        public Task Handle(OperationDispatchedCommand notification, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
         }

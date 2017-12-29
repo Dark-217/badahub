@@ -3,9 +3,9 @@ using System;
 
 namespace BadaHub.API.Domain.Commands
 {
-    public class NewOperationCommand : OperationCommand
+    public class OperationDispatchedCommand : OperationCommand
     {
-        public NewOperationCommand(Guid id, OperationType type, dynamic payload)
+        public OperationDispatchedCommand(Guid id, OperationType type, dynamic payload)
         {
             Id = id;
             Type = type;
