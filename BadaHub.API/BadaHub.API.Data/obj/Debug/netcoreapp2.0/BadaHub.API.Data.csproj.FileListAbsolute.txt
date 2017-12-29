@@ -1,4 +1,0 @@
-C:\Projects\badahub\BadaHub.API\BadaHub.API.Data\obj\Debug\netcoreapp2.0\BadaHub.API.Data.csprojResolveAssemblyReference.cache
-C:\Projects\badahub\BadaHub.API\BadaHub.API.Data\obj\Debug\netcoreapp2.0\BadaHub.API.Data.csproj.CoreCompileInputs.cache
-C:\Projects\badahub\BadaHub.API\BadaHub.API.Data\obj\Debug\netcoreapp2.0\BadaHub.API.Data.AssemblyInfoInputs.cache
-C:\Projects\badahub\BadaHub.API\BadaHub.API.Data\obj\Debug\netcoreapp2.0\BadaHub.API.Data.AssemblyInfo.cs
