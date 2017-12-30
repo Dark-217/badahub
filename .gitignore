@@ -1,6 +1,8 @@
 configuration.json
 BadaHub.API/node_modules/
 *.iml
+BadaHub.API/obj/
+BadaHub.API/bin/
 BadaHub.API/.idea/
 BadaHub.API/.vscode/
 *.log
