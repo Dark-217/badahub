@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadaHub.API", "BadaHub.API\BadaHub.API.csproj", "{D40FEBF3-7DBA-4439-9AF5-B513942D904E}"
 EndProject
@@ -13,9 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadaHub.API.Domain.Core", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadaHub.API.Domain", "BadaHub.API.Domain\BadaHub.API.Domain.csproj", "{5554011F-BBF4-4BCE-9AE8-4548774BF036}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadaHub.API.Application", "BadaHub.API.Application\BadaHub.API.Application.csproj", "{FA5D9703-CD8E-4001-B189-42B3351A1F47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadaHub.API.Application", "BadaHub.API.Application\BadaHub.API.Application.csproj", "{FA5D9703-CD8E-4001-B189-42B3351A1F47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadaHub.API.Data", "BadaHub.API.Data\BadaHub.API.Data.csproj", "{0FCBF071-968E-49D3-A5BD-67A897821E34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BadaHub.API.Data", "BadaHub.API.Data\BadaHub.API.Data.csproj", "{0FCBF071-968E-49D3-A5BD-67A897821E34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadaHub.API.Infra.Bus", "BadaHub.API.Infra.Bus\BadaHub.API.Infra.Bus.csproj", "{5E2F4E5C-290C-40C2-994F-DEE14FA407E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadaHub.API.Infra.Identity", "BadaHub.API.Infra.Identity\BadaHub.API.Infra.Identity.csproj", "{DC90C5D9-547E-4A5D-9BF5-E488F2F19EFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{0FCBF071-968E-49D3-A5BD-67A897821E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FCBF071-968E-49D3-A5BD-67A897821E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FCBF071-968E-49D3-A5BD-67A897821E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E2F4E5C-290C-40C2-994F-DEE14FA407E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E2F4E5C-290C-40C2-994F-DEE14FA407E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E2F4E5C-290C-40C2-994F-DEE14FA407E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E2F4E5C-290C-40C2-994F-DEE14FA407E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC90C5D9-547E-4A5D-9BF5-E488F2F19EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC90C5D9-547E-4A5D-9BF5-E488F2F19EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC90C5D9-547E-4A5D-9BF5-E488F2F19EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC90C5D9-547E-4A5D-9BF5-E488F2F19EFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

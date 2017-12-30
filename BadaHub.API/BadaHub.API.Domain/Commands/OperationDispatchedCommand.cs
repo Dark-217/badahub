@@ -14,7 +14,7 @@ namespace BadaHub.API.Domain.Commands
 
         public override bool IsValid()
         {
-            ValidationResult = new NewOperationCommandValidation().Validate(this);
+            ValidationResult = new OperationDispatchedCommandValidation().Validate(this);
             return ValidationResult.IsValid;
         }
     }

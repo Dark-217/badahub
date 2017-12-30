@@ -14,7 +14,11 @@ using BadaHub.API.Domain.Core.Notifications;
 using BadaHub.API.Domain.EventHandlers;
 using BadaHub.API.Domain.Events;
 using BadaHub.API.Domain.Interfaces;
+using BadaHub.API.Infra.Bus;
+using BadaHub.API.Infra.Identity.Authorization;
+using BadaHub.API.Infra.Identity.Models;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -56,8 +60,8 @@ namespace BadaHub.API.Infra.IoC
             services.AddScoped<EventStoreSqlContext>();
 
             //// Infra - Identity Services
-            services.AddTransient<IEmailSender, AuthEmailMessageSender>();
-            services.AddTransient<ISmsSender, AuthSMSMessageSender>();
+            //services.AddTransient<IEmailSender, AuthEmailMessageSender>();
+            //services.AddTransient<ISmsSender, AuthSMSMessageSender>();
 
             //// Infra - Identity
             services.AddScoped<IUser, AspNetUser>();

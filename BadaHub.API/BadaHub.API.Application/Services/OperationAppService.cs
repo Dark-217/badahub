@@ -5,10 +5,10 @@ using AutoMapper.QueryableExtensions;
 using BadaHub.API.Application.EventSourcedNormalizers;
 using BadaHub.API.Application.Interfaces;
 using BadaHub.API.Application.ViewModels;
-using BadaHub.API.Domain.Commands;
 using BadaHub.API.Domain.Core.Bus;
 using BadaHub.API.Domain.Interfaces;
 using BadaHub.API.Data.Repository.EventSourcing;
+using BadaHub.API.Domain.Commands;
 
 namespace BadaHub.API.Application.Services
 {
@@ -42,7 +42,7 @@ namespace BadaHub.API.Application.Services
 
         public Guid Dispatch(OperationViewModel operationViewModel)
         {
-            var newOperationCommand = _mapper.Map<NewOperationCommand>(operationViewModel);
+            var newOperationCommand = _mapper.Map<OperationDispatchedCommand>(operationViewModel);
             _bus.SendCommand(newOperationCommand);
             return newOperationCommand.Id;
         }

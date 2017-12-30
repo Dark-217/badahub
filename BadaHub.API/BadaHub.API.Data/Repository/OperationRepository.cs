@@ -21,7 +21,7 @@ namespace BadaHub.API.Data.Repository
             return DbSet.AsNoTracking().FirstOrDefault(c => c.Id == id);
         }
 
-        public Task<List<Operation>> GetAll()
+        public IQueryable<Operation> GetAll()
         {
             throw new NotImplementedException();
         }

@@ -8,8 +8,8 @@ namespace BadaHub.API.Application.AutoMapper
     {
         public ViewModelToDomainMappingProfile()
         {
-            CreateMap<OperationViewModel, NewOperationCommand>()
-                .ConstructUsing(c => new NewOperationCommand(c.Id, c.Type, c.Payload));
+            CreateMap<OperationViewModel, OperationDispatchedCommand>()
+                .ConstructUsing(c => new OperationDispatchedCommand(c.Id, c.Type, c.Payload));
         }
     }
 }

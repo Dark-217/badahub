@@ -12,5 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BadaHub.API.Application\BadaHub.API.Application.csproj" />
     <ProjectReference Include="..\BadaHub.API.Domain.Core\BadaHub.API.Domain.Core.csproj" />
+    <ProjectReference Include="..\BadaHub.API.Infra.Bus\BadaHub.API.Infra.Bus.csproj" />
+    <ProjectReference Include="..\BadaHub.API.Infra.Identity\BadaHub.API.Infra.Identity.csproj" />
   </ItemGroup>
 </Project>

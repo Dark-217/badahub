@@ -1,5 +1,6 @@
 ﻿using BadaHub.API.Data.Repository.EventSourcing;
 using BadaHub.API.Domain.Core.Events;
+using BadaHub.API.Domain.Interfaces;
 using Newtonsoft.Json;
 
 namespace BadaHub.API.Data.EventSourcing
