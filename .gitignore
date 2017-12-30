@@ -15,12 +15,12 @@ BadaHub.API/BadaHub.API/bin/
 BadaHub.API/BadaHub.API.Domain.Core/obj/
 BadaHub.API/BadaHub.API.Domain.Core/bin/
 BadaHub.API/.vs/
-BadaHub.API/BadaHub.API.Domain/bin/
 BadaHub.API/BadaHub.API.Application/obj/
 BadaHub.API/BadaHub.API.Data/obj/
 BadaHub.Client/src/platform/
 .idea/
 BadaHub.API/BadaHub.API.Application/bin/
+BadaHub.API/BadaHub.API.Application/obj/
 BadaHub.API/BadaHub.API.Data/bin/
 BadaHub.API/BadaHub.API.Infra.Bus/bin/
 BadaHub.API/BadaHub.API.Infra.Bus/obj/
