@@ -9,7 +9,7 @@ namespace BadaHub.API.Domain.Commands
 
         public OperationType Type { get; protected set; }
 
-        public dynamic Payload { get; protected set; }
+        public string Payload { get; protected set; }
 
         public override bool IsValid()
         {

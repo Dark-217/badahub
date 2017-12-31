@@ -20,6 +20,6 @@ namespace BadaHub.API.Domain.Models
 
         public OperationType Type { get; private set; }
 
-        public dynamic Payload { get; private set; }
+        public string Payload { get; private set; }
     }
 }
