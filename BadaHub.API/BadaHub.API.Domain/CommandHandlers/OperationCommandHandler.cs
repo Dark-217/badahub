@@ -29,8 +29,8 @@ namespace BadaHub.API.Domain.CommandHandlers
 
             if (!operation.IsValid())
             {
-                await NotifyValidationErrors(operation);
-                return new Task(() => { });
+                NotifyValidationErrors(operation);
+                return Task.CompletedTask;
             }
 
             var newOperation = new Operation(Guid.NewGuid(), operation.Type, operation.Payload);
@@ -40,9 +40,9 @@ namespace BadaHub.API.Domain.CommandHandlers
 
             if (Commit())
             {
-                await Bus.RaiseEvent(new OperationDispatchedEvent(operation.Id, operation.Type, operation.Payload));
+                Bus.RaiseEvent(new OperationDispatchedEvent(operation.Id, operation.Type, operation.Payload));
             }
-            return new Task(() => { });
+            return Task.CompletedTask;
         }
 
         //public Task Handle(OperationDispatchedCommand notification, CancellationToken cancellationToken)
