@@ -42,6 +42,7 @@ namespace BadaHub.API.Application.Services
 
         public Guid Dispatch(OperationViewModel operationViewModel)
         {
+
             var newOperationCommand = _mapper.Map<OperationDispatchedCommand>(operationViewModel);
             _bus.SendCommand(newOperationCommand);
             return newOperationCommand.Id;

@@ -6,7 +6,7 @@ namespace BadaHub.API.Domain.Events
 {
     public class OperationDispatchedEvent : Event
     {
-        public OperationDispatchedEvent(Guid id, OperationType type, dynamic payload)
+        public OperationDispatchedEvent(Guid id, OperationType type, string payload)
         {
             Id = id;
             Type = type;

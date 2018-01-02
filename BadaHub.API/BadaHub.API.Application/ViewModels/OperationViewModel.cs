@@ -17,5 +17,10 @@ namespace BadaHub.API.Application.ViewModels
         [Required(ErrorMessage = "The Payload is Required")]
         [DisplayName("Payload")]
         public string Payload { get; set; }
+
+        public DateTime Timestamp { get; set; }
+        public ValidationResult ValidationResult { get; set; }
+        public string MessageType { get; set; }
+        public Guid AggregateId { get; set; }
     }
 }

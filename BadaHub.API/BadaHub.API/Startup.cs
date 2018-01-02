@@ -73,6 +73,7 @@ namespace BadaHub.API
                     googleOptions.ClientId = Configuration["Authentication:Google:ClientId"];
                     googleOptions.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
                 });
+            
 
             services.AddMvc();
             services.AddSignalR();

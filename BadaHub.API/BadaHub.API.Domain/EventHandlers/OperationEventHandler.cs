@@ -21,7 +21,7 @@ namespace BadaHub.API.Domain.EventHandlers
 
         public Task Handle(OperationDispatchedEvent notification, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return new Task(() => { });
         }
 
         //public void Handle(CustomerRemovedEvent message)

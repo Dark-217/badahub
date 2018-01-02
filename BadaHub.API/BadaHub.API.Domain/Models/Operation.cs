@@ -6,7 +6,7 @@ namespace BadaHub.API.Domain.Models
 {
     public class Operation : Entity
     {
-        public Operation(Guid id, OperationType type, dynamic payload)
+        public Operation(Guid id, OperationType type, string payload)
         {
             Id = id;
             Type = type;
