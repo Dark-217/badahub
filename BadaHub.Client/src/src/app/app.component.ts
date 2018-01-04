@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component, HostListener, ViewEncapsulation} from '@angular/core';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -13,6 +13,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 })
 export class MyApp implements OnInit {
   rootPage:any = TabsPage;
+  connection: HubConnection;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -25,11 +26,11 @@ export class MyApp implements OnInit {
 
   ngOnInit(){
 
-      const connection = new HubConnection('http://localhost:52858/main');
-      connection.on("send", function(){
-         console.log("message");
+      this.connection = new HubConnection('http://localhost:52858/main');
+      this.connection.on("broadcastMessage", function(message){
+         console.log(message);
       });
-      connection.start()
+      this.connection.start()
           .then(() => {
               console.log('Hub connection started')
           })
@@ -37,4 +38,13 @@ export class MyApp implements OnInit {
               console.log('Error while establishing connection')
           });
   }
+
+
+    @HostListener('window:beforeunload')
+    doSomething() {
+      this.connection.stop();
+    }
+
+
 }
+
