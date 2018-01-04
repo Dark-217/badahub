@@ -4,7 +4,7 @@
 ### ToDo
 - [x] Create a WebSocket server
 - [x] Implement DDD from [Equinox Project](https://github.com/EduardoPires/EquinoxProject)
-- [ ] Make a request to the server, return state change to seperate device (phone)
+- [x] Make a request to the server, return state change to seperate device (phone)
 - [ ] Set up event bus to trigger event (to HASS or 3rd party), save events to SQL Server then broadcast via WS
 - [ ] Log errors to file (set up file watcher later to parse and display recent errors)
 - [ ] Microservice for talking to IRKit
